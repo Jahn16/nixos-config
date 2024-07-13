@@ -84,6 +84,7 @@
     swaynotificationcenter
     bluez
     bluez-tools
+    podman-compose
     (where-is-my-sddm-theme.override {
       themeConfig.General = {
         backgroundMode = "fill";
