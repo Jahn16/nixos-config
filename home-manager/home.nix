@@ -23,6 +23,7 @@
     localsend
     wl-clipboard
     hyprshot
+    playerctl
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 
@@ -82,5 +83,6 @@
   programs.wlogout = {
     enable = true;
   };
+  services.playerctld.enable = true;
 }
 

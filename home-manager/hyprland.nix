@@ -36,6 +36,11 @@
           "$mod+Shift+Ctrl, right, movewindow, r"
           "$mod+Shift+Ctrl, up, movewindow, u"
           "$mod+Shift+Ctrl, down, movewindow, d"
+          # Media Control
+          ", XF86AudioPlay, exec, playerctl play-pause"
+          ", XF86AudioPause, exec, playerctl play-pause"
+          ", XF86AudioNext, exec, playerctl next"
+          ", XF86AudioPrev, exec, playerctl previous"
         ]
         ++ (
           # workspaces
