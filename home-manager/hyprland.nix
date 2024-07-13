@@ -13,6 +13,9 @@
         "Unknown-1,disable"
       ];
       exec-once = [ "waybar" "wpaperd -d" ];
+      decoration = {
+        rounding = 5;
+      };
       windowrulev2 = [
         "opacity 0.80 0.80,class:^(kitty)$"
         "opacity 0.90 0.90,class:^(librewolf)$"
