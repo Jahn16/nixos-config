@@ -70,6 +70,10 @@
       sensible
       vim-tmux-navigator
     ];
+    extraConfig = ''
+      set -g status-style bg=blue
+      set -g pane-active-border-style fg=blue
+    '';
   };
   programs.direnv.enable = true;
   programs.wpaperd = {
