@@ -15,7 +15,7 @@
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     librewolf
-    spotify
+    spotube
     candy-icons
     bat
     ripgrep

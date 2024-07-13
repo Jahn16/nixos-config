@@ -155,6 +155,7 @@
     builtins.elem (lib.getName pkg) [
       "nvidia-x11"
       "nvidia-settings"
+      "spotify"
     ];
 
   hardware.graphics.enable = true;
