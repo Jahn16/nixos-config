@@ -74,6 +74,7 @@
       set -g status-style bg=blue
       set -g pane-active-border-style fg=blue
     '';
+    tmuxp.enable = true;
   };
   programs.direnv.enable = true;
   programs.wpaperd = {
