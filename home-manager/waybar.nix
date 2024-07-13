@@ -7,7 +7,7 @@
         position = "bottom";
         modules-left = [ "hyprland/workspaces" "wlr/taskbar" ];
         modules-center = [ "clock" ];
-        modules-right = [ "custom/wallpaper" "tray" "custom/power" ];
+        modules-right = [ "tray" "custom/wallpaper" "custom/power" ];
         "wlr/taskbar" = {
           icon-theme = "Candy";
         };
@@ -21,6 +21,9 @@
         "custom/power" = {
           format = "⏻ ";
           on-click = "wlogout";
+        };
+        "tray" = {
+          spacing = 10;
         };
       };
     };
