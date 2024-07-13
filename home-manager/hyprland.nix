@@ -36,6 +36,10 @@
           "$mod+Shift+Ctrl, right, movewindow, r"
           "$mod+Shift+Ctrl, up, movewindow, u"
           "$mod+Shift+Ctrl, down, movewindow, d"
+          # Audio Control
+          ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+          ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+          ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+"
           # Media Control
           ", XF86AudioPlay, exec, playerctl play-pause"
           ", XF86AudioPause, exec, playerctl play-pause"
