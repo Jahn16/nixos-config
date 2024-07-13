@@ -82,6 +82,7 @@
         #network,
         #pulseaudio,
         #bluetooth,
+        #wireplumber,
         #tray,
         #mode,
         #custom-power,
