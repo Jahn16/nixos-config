@@ -7,7 +7,7 @@
         position = "bottom";
         modules-left = [ "hyprland/workspaces" "wlr/taskbar" ];
         modules-center = [ "clock" ];
-        modules-right = [ "tray" "custom/wallpaper" "custom/power" ];
+        modules-right = [ "tray" "wireplumber" "custom/wallpaper" "custom/power" ];
         "wlr/taskbar" = {
           icon-theme = "Candy";
         };
@@ -24,6 +24,9 @@
         };
         "tray" = {
           spacing = 10;
+        };
+        "wireplumber" = {
+          format = "  {volume}";
         };
       };
     };
