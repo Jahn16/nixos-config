@@ -1,11 +1,6 @@
-{ pkgs, lib, ... }:
-let
-  nixvim = import (builtins.fetchGit {
-    url = "https://github.com/nix-community/nixvim";
-  });
-in
+{ pkgs, lib, inputs, ... }:
 {
-  imports = [ nixvim.homeManagerModules.nixvim ];
+  imports = [ inputs.nixvim.homeManagerModules.nixvim ];
   programs.nixvim = {
     enable = true;
     opts = {
