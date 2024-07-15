@@ -4,11 +4,17 @@
   programs.nixvim = {
     enable = true;
     opts = {
+      number = true;
+      relativenumber = true;
       expandtab = true;
+      tabstop = 4;
+      shiftwidth = 4;
       autoindent = true;
       smartcase = true;
       cursorline = true;
       background = "dark";
+      undodir = "/home/jahn/.vim/undodir";
+      undofile = true;
     };
     globals = {
       mapleader = " ";
