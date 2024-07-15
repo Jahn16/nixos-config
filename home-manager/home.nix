@@ -89,5 +89,9 @@
     enable = true;
   };
   services.playerctld.enable = true;
+  programs.gh = {
+    enable = true;
+    settings.git_protocol = "ssh";
+  };
 }
 
