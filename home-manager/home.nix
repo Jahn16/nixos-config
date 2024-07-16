@@ -24,6 +24,7 @@
     wl-clipboard
     hyprshot
     playerctl
+    jellyfin-media-player
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 
