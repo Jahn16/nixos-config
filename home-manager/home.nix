@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, lib, ... }:
 {
   imports = [
     ./hyprland.nix
@@ -8,6 +8,17 @@
     ./nixvim.nix
     ./gtk.nix
   ];
+
+  nixpkgs = {
+    config = {
+      allowUnfreePredicate = pkg:
+        builtins.elem (lib.getName pkg) [
+          "spotify"
+        ];
+    };
+  };
+
+
   home.username = "jahn";
   home.homeDirectory = "/home/jahn";
   home.stateVersion = "24.11";
@@ -25,6 +36,7 @@
     hyprshot
     playerctl
     jellyfin-media-player
+    spotify
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 
@@ -93,6 +105,13 @@
   programs.gh = {
     enable = true;
     settings.git_protocol = "ssh";
+  };
+  xdg.desktopEntries = {
+    spotify = {
+      name = "Spotify";
+      exec = "spotify --disable-gpu";
+      icon = "spotify-client";
+    };
   };
 }
 
