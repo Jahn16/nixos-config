@@ -52,6 +52,7 @@
       tmux-navigator.enable = true;
       nvim-tree.enable = true;
       which-key.enable = true;
+      fugitive.enable = true;
       telescope = {
         enable = true;
         keymaps = {
