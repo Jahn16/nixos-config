@@ -112,6 +112,11 @@
       exec = "spotify --disable-gpu";
       icon = "spotify-client";
     };
+    "com.github.iwalton3.jellyfin-media-player" = {
+      name = "Jellyfin Media Player";
+      exec = "jellyfinmediaplayer --disable-gpu";
+      icon = "com.github.iwalton3.jellyfin-media-player";
+    };
   };
 }
 
