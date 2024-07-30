@@ -90,14 +90,8 @@
     bluez
     bluez-tools
     podman-compose
-    (where-is-my-sddm-theme.override {
-      themeConfig.General = {
-        backgroundMode = "fill";
-        background = "${pkgs.nixos-artwork.wallpapers.mosaic-blue.gnomeFilePath}";
-        passwordCursorColor = "#ffffff";
-        blurRadius = 0;
-      };
-      variants = [ "qt5" ];
+    (pkgs.catppuccin-sddm.override {
+      flavor = "mocha";
     })
   ];
   services.blueman.enable = true;
@@ -147,7 +141,8 @@
       sddm = {
         enable = true;
         wayland.enable = true;
-        theme = "where_is_my_sddm_theme_qt5";
+        theme = "catppuccin-mocha";
+        package = pkgs.kdePackages.sddm;
       };
       defaultSession = "hyprland";
     };
