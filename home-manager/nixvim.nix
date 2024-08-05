@@ -54,6 +54,16 @@
       tmux-navigator.enable = true;
       nvim-tree.enable = true;
       which-key.enable = true;
+      neogen = {
+        enable = true;
+        languages = {
+          python = {
+            template = {
+              annotation_convention = "reST";
+            };
+          };
+        };
+      };
       telescope = {
         enable = true;
         keymaps = {
@@ -117,7 +127,7 @@
       conform-nvim = {
         enable = true;
         formattersByFt = {
-          python = [ "isort" "lua" ];
+          python = [ "ruff_fix" "ruff_format" ];
           javascript = [ "prettier" ];
           typescript = [ "prettier" ];
           svelte = [ "prettier" ];
@@ -128,15 +138,14 @@
       };
       lint = {
         enable = true;
-        lintersByFt =
-          {
-            python = [ "flake8" "mypy" ];
-            go = [ "golangcilint" ];
-            javascript = [ "eslint" ];
-            typescript = [ "eslint" ];
-            svelte = [ "eslint" ];
-            nix = [ "nix" ];
-          };
+        lintersByFt = {
+          python = [ "ruff" "mypy" ];
+          go = [ "golangcilint" ];
+          javascript = [ "eslint" ];
+          typescript = [ "eslint" ];
+          svelte = [ "eslint" ];
+          nix = [ "nix" ];
+        };
       };
       lsp = {
         enable = true;
