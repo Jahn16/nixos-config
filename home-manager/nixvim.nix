@@ -54,16 +54,7 @@
       tmux-navigator.enable = true;
       nvim-tree.enable = true;
       which-key.enable = true;
-      neogen = {
-        enable = true;
-        languages = {
-          python = {
-            template = {
-              annotation_convention = "reST";
-            };
-          };
-        };
-      };
+      neogen.enable = true;
       telescope = {
         enable = true;
         keymaps = {
