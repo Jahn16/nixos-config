@@ -68,6 +68,7 @@
           };
         };
       };
+      fugitive.enable = true;
       mini = {
         enable = true;
         modules = {
