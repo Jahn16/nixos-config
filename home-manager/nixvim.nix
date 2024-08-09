@@ -158,7 +158,7 @@
         };
         keymaps = {
           diagnostic = {
-            "<leader>ld" = {
+            "<leader>ll" = {
               action = "open_float";
               desc = "Line Diagnostics";
             };
