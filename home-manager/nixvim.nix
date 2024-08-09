@@ -41,7 +41,15 @@
           desc = "Restore session";
         };
       }
-
+      {
+        mode = "n";
+        key = "<leader>d";
+        action = ":lua require('neogen').generate()<CR>";
+        options = {
+          silent = true;
+          desc = "Generate docstring";
+        };
+      }
     ];
     extraConfigLua = ''
       local imap_expr = function(lhs, rhs)
