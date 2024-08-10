@@ -5,12 +5,9 @@
     settings = {
       mainBar = {
         position = "bottom";
-        modules-left = [ "hyprland/workspaces" "wlr/taskbar" ];
+        modules-left = [ "hyprland/workspaces" ];
         modules-center = [ "clock" ];
         modules-right = [ "tray" "wireplumber" "custom/wallpaper" "custom/power" ];
-        "wlr/taskbar" = {
-          icon-theme = "Candy";
-        };
         "clock" = {
           format = "{:%d %b %H:%M}";
         };
