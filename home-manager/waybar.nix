@@ -7,7 +7,7 @@
         position = "bottom";
         modules-left = [ "hyprland/workspaces" ];
         modules-center = [ "clock" ];
-        modules-right = [ "tray" "wireplumber" "custom/wallpaper" "custom/power" ];
+        modules-right = [ "tray" "wireplumber" "custom/wallpaper" "custom/nix-updates" "custom/power" ];
         "clock" = {
           format = "{:%d %b %H:%M}";
         };
@@ -24,6 +24,18 @@
         };
         "wireplumber" = {
           format = "  {volume}";
+        };
+        "custom/nix-updates" = {
+          exec = "$HOME/bin/update-checker";
+          on-click = "$HOME/bin/update-checker && notify-send 'The system has been updated'";
+          interval = 3600;
+          tooltip = true;
+          return-type = "json";
+          format = "{} {icon}";
+          format-icons = {
+            has-updates = " ";
+            updated = " ";
+          };
         };
       };
     };
