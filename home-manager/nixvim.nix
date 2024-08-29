@@ -126,15 +126,17 @@
       };
       conform-nvim = {
         enable = true;
-        formattersByFt = {
-          python = [ "ruff_fix" "ruff_format" ];
-          javascript = [ "prettier" ];
-          typescript = [ "prettier" ];
-          svelte = [ "prettier" ];
-          go = [ "gofmt" "goimports" ];
-          nix = [ "nixpkgs_fmt" ];
+        settings = {
+          format_on_save = { };
+          formatters_by_ft = {
+            python = [ "ruff_fix" "ruff_format" ];
+            javascript = [ "prettier" ];
+            typescript = [ "prettier" ];
+            svelte = [ "prettier" ];
+            go = [ "gofmt" "goimports" ];
+            nix = [ "nixpkgs_fmt" ];
+          };
         };
-        formatOnSave = { };
       };
       lint = {
         enable = true;
