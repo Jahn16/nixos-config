@@ -26,7 +26,6 @@
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     librewolf
-    spotube
     candy-icons
     bat
     ripgrep
