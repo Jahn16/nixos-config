@@ -17,6 +17,8 @@
       background = "dark";
       undodir = "/home/jahn/.vim/undodir";
       undofile = true;
+      foldmethod = "expr";
+      foldexpr = "v:lua.vim.treesitter.foldexpr()";
     };
     globals = {
       mapleader = " ";
