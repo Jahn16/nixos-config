@@ -37,6 +37,7 @@
     jellyfin-media-player
     spotify
     (nerdfonts.override { fonts = [ "Hack" ]; })
+    tree
   ];
 
   home.file = { };
