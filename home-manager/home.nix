@@ -36,7 +36,7 @@
     playerctl
     jellyfin-media-player
     spotify
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
+    (nerdfonts.override { fonts = [ "Hack" ]; })
   ];
 
   home.file = { };
