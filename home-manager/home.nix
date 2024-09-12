@@ -38,6 +38,7 @@
     spotify
     (nerdfonts.override { fonts = [ "Hack" ]; })
     tree
+    vesktop
   ];
 
   home.file = { };
