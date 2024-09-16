@@ -140,6 +140,7 @@
             svelte = [ "prettier" ];
             go = [ "gofmt" "goimports" ];
             nix = [ "nixpkgs_fmt" ];
+            yaml = [ "yamlfix" ];
           };
         };
       };
