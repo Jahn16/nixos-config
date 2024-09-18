@@ -160,7 +160,7 @@
         servers = {
           pyright.enable = true;
           gopls.enable = true;
-          tsserver.enable = true;
+          ts-ls.enable = true;
           html.enable = true;
           svelte.enable = true;
         };
