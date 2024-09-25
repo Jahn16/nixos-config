@@ -61,6 +61,7 @@
       imap_expr('<S-Tab>', [[pumvisible() ? "\<C-p>" : "\<S-Tab>"]])
     '';
     plugins = {
+      web-devicons.enable = true;
       tmux-navigator.enable = true;
       nvim-tree.enable = true;
       which-key.enable = true;
