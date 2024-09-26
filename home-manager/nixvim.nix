@@ -12,6 +12,7 @@
       tabstop = 4;
       shiftwidth = 4;
       autoindent = true;
+      ignorecase = true;
       smartcase = true;
       cursorline = true;
       background = "dark";
@@ -77,6 +78,11 @@
             action = "live_grep";
             options.desc = "Live Grep";
           };
+          "<leader>gr" = {
+            action = "live_grep";
+            options.desc = "Goto references";
+          };
+
         };
       };
       fugitive.enable = true;
