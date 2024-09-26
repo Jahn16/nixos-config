@@ -78,8 +78,8 @@
             action = "live_grep";
             options.desc = "Live Grep";
           };
-          "<leader>gr" = {
-            action = "live_grep";
+          "gr" = {
+            action = "lsp_references";
             options.desc = "Goto references";
           };
 
