@@ -11,13 +11,16 @@
     ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Bootloader.
-  boot.loader = {
-    systemd-boot = {
-      enable = true;
-      consoleMode = "max";
+  # Boot
+  boot = {
+    tmp.cleanOnBoot = true;
+    loader = {
+      systemd-boot = {
+        enable = true;
+        consoleMode = "max";
+      };
+      efi.canTouchEfiVariables = true;
     };
-    efi.canTouchEfiVariables = true;
   };
 
   networking.hostName = "nixos"; # Define your hostname.
