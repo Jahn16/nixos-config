@@ -68,7 +68,7 @@
   };
   programs.eza = {
     enable = true;
-    icons = true;
+    icons = "auto";
   };
   services.blueman-applet.enable = true;
   programs.git = {

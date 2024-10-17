@@ -103,7 +103,7 @@
       auto-session =
         {
           enable = true;
-          extraOptions = {
+          settings = {
             auto_restore_enabled = false;
           };
         };
@@ -167,7 +167,7 @@
         servers = {
           pyright.enable = true;
           gopls.enable = true;
-          ts-ls.enable = true;
+          ts_ls.enable = true;
           html.enable = true;
           svelte.enable = true;
         };
