@@ -39,6 +39,7 @@
     (nerdfonts.override { fonts = [ "Hack" ]; })
     tree
     vesktop
+    freetube
   ];
 
   home.file = { };
