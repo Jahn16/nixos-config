@@ -23,8 +23,8 @@
   home.homeDirectory = "/home/jahn";
   home.stateVersion = "24.11";
 
-  fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
+    nerd-fonts.hack
     librewolf
     candy-icons
     bat
@@ -36,7 +36,6 @@
     playerctl
     jellyfin-media-player
     spotify
-    (nerdfonts.override { fonts = [ "Hack" ]; })
     tree
     vesktop
     freetube
