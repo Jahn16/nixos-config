@@ -20,6 +20,10 @@
         "opacity 0.80 0.80,class:^(kitty)$"
         "opacity 0.90 0.90,class:^(librewolf)$"
       ];
+      input = {
+        kb_layout = "us,br";
+        kb_options = "grp:win_space_toggle";
+      };
       bind =
         [
           "$mod, Q, exec, $terminal"

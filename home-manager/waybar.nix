@@ -7,7 +7,7 @@
         position = "bottom";
         modules-left = [ "hyprland/workspaces" ];
         modules-center = [ "clock" ];
-        modules-right = [ "tray" "wireplumber" "custom/wallpaper" "custom/power" ];
+        modules-right = [ "tray" "wireplumber" "hyprland/language" "custom/wallpaper" "custom/power" ];
         "clock" = {
           format = "{:%d %b %H:%M}";
         };
@@ -24,6 +24,11 @@
         };
         "wireplumber" = {
           format = "  {volume}";
+        };
+        "hyprland/language" = {
+          format = "{} ";
+          format-en = "US";
+          format-br = "BR";
         };
       };
     };
