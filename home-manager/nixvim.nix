@@ -53,6 +53,13 @@
           desc = "Generate docstring";
         };
       }
+      { mode = "n"; key = "<leader>ha"; action.__raw = "function() require'harpoon':list():add() end"; }
+      { mode = "n"; key = "<leader>he"; action.__raw = "function() require'harpoon'.ui:toggle_quick_menu(require'harpoon':list()) end"; }
+      { mode = "n"; key = "<leader>hj"; action.__raw = "function() require'harpoon':list():select(1) end"; }
+      { mode = "n"; key = "<leader>hk"; action.__raw = "function() require'harpoon':list():select(2) end"; }
+      { mode = "n"; key = "<leader>hl"; action.__raw = "function() require'harpoon':list():select(3) end"; }
+      { mode = "n"; key = "<leader>h;"; action.__raw = "function() require'harpoon':list():select(4) end"; }
+
     ];
     extraConfigLua = ''
       local imap_expr = function(lhs, rhs)
@@ -107,19 +114,7 @@
             auto_restore_enabled = false;
           };
         };
-      harpoon = {
-        enable = true;
-        keymaps = {
-          addFile = "<leader>ha";
-          toggleQuickMenu = "<leader>he";
-          navFile = {
-            "1" = "<leader>hh";
-            "2" = "<leader>hj";
-            "3" = "<leader>hk";
-            "4" = "<leader>hl";
-          };
-        };
-      };
+      harpoon.enable = true;
       noice = {
         enable = true;
       };
