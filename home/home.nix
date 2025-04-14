@@ -11,20 +11,10 @@
 
   home.packages = with pkgs; [
     nerd-fonts.hack
-    librewolf
-    candy-icons
-    bat
-    ripgrep
     nixpkgs-fmt
     localsend
-    wl-clipboard
-    hyprshot
-    playerctl
-    jellyfin-media-player
     spotify
     tree
-    vesktop
-    freetube
   ];
 
   home.file = { };
