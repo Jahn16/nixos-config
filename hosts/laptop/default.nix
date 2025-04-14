@@ -88,9 +88,11 @@
     packages = with pkgs; [
       #  thunderbird
     ];
+    shell = pkgs.zsh;
   };
 
   # Install firefox.
+  programs.zsh.enable = true;
   programs.firefox.enable = true;
 
   # List packages installed in system profile. To search, run:

@@ -25,11 +25,10 @@
 
   programs.home-manager.enable = true;
 
-  programs.fish = {
+  programs.zsh = {
     enable = true;
-    interactiveShellInit = ''
-      set fish_greeting # Disable greeting
-    '';
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
   };
   programs.eza = {
     enable = true;
