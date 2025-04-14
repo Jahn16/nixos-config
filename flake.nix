@@ -20,8 +20,8 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.jahn = ./home-manager/home.nix;
-	  home-manager.extraSpecialArgs.inputs = inputs;
+          home-manager.users.jahn = ./home/home.nix;
+          home-manager.extraSpecialArgs.inputs = inputs;
           # Optionally, use home-manager.extraSpecialArgs to pass
           # arguments to home.nix
         }
