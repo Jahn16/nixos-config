@@ -5,16 +5,6 @@
     ./nixvim.nix
   ];
 
-  nixpkgs = {
-    config = {
-      allowUnfreePredicate = pkg:
-        builtins.elem (lib.getName pkg) [
-          "spotify"
-        ];
-    };
-  };
-
-
   home.username = "jahn";
   home.homeDirectory = "/home/jahn";
   home.stateVersion = "24.11";
