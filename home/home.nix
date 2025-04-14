@@ -1,12 +1,8 @@
 { config, pkgs, inputs, lib, ... }:
 {
   imports = [
-    ./hyprland.nix
-    ./rofi.nix
-    ./waybar.nix
     ./starship.nix
     ./nixvim.nix
-    ./gtk.nix
   ];
 
   nixpkgs = {
@@ -48,17 +44,6 @@
   };
 
   programs.home-manager.enable = true;
-  home.pointerCursor = {
-    gtk.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic";
-    size = 16;
-  };
-
-
-  programs.kitty = {
-    enable = true;
-  };
 
   programs.fish = {
     enable = true;
@@ -70,7 +55,6 @@
     enable = true;
     icons = "auto";
   };
-  services.blueman-applet.enable = true;
   programs.git = {
     enable = true;
     userEmail = "jpdeoliveiraferreira@gmail.com";
@@ -84,40 +68,12 @@
       sensible
       vim-tmux-navigator
     ];
-    extraConfig = ''
-      set -g status-style bg=blue
-      set -g pane-active-border-style fg=blue
-    '';
     tmuxp.enable = true;
   };
   programs.direnv.enable = true;
-  programs.wpaperd = {
-    enable = true;
-    settings = {
-      DP-1 = {
-        path = "/home/jahn/Pictures/Wallpapers";
-      };
-    };
-  };
-  programs.wlogout = {
-    enable = true;
-  };
-  services.playerctld.enable = true;
   programs.gh = {
     enable = true;
     settings.git_protocol = "ssh";
-  };
-  xdg.desktopEntries = {
-    spotify = {
-      name = "Spotify";
-      exec = "spotify --disable-gpu";
-      icon = "spotify-client";
-    };
-    "com.github.iwalton3.jellyfin-media-player" = {
-      name = "Jellyfin Media Player";
-      exec = "jellyfinmediaplayer --disable-gpu";
-      icon = "com.github.iwalton3.jellyfin-media-player";
-    };
   };
 }
 
