@@ -15,6 +15,7 @@
     localsend
     spotify
     tree
+    discord
   ];
 
   home.file = { };
