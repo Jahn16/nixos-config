@@ -61,6 +61,10 @@
     enable = true;
     settings.git_protocol = "ssh";
   };
+  programs.taskwarrior = {
+    enable = true;
+    package = pkgs.taskwarrior3;
+  };
 }
 
 
