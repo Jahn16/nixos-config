@@ -48,6 +48,8 @@
     enable = true;
     prefix = "C-a";
     mouse = true;
+    terminal = "tmux-256color";
+    extraConfig = "set -ag terminal-overrides \",xterm-256color:RGB\"";
     plugins = with pkgs.tmuxPlugins; [
       sensible
       vim-tmux-navigator
@@ -60,4 +62,5 @@
     settings.git_protocol = "ssh";
   };
 }
+
 
