@@ -43,6 +43,7 @@
     enable = true;
     userEmail = "jpdeoliveiraferreira@gmail.com";
     userName = "Jahn16";
+    delta.enable = true;
   };
   programs.tmux = {
     enable = true;
@@ -54,7 +55,7 @@
       sensible
       vim-tmux-navigator
     ];
-    tmuxp.enable = true;
+    tmuxinator.enable = true;
   };
   programs.direnv.enable = true;
   programs.gh = {
