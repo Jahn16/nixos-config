@@ -16,6 +16,7 @@
     spotify
     tree
     discord
+    jellyfin-media-player
   ];
 
   home.file = { };
