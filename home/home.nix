@@ -17,6 +17,8 @@
     tree
     discord
     jellyfin-media-player
+    kubectl
+    k9s
   ];
 
   home.file = { };
