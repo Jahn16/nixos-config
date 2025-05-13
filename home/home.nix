@@ -19,6 +19,7 @@
     jellyfin-media-player
     kubectl
     k9s
+    teams-for-linux
   ];
 
   home.file = { };
