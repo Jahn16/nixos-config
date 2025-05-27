@@ -74,7 +74,7 @@
       nvim-tree.enable = true;
       which-key.enable = true;
       neogen.enable = true;
-      copilot-vim.enable = true;
+      copilot-lua.enable = true;
       telescope = {
         enable = true;
         keymaps = {
