@@ -98,7 +98,6 @@
         enable = true;
         modules = {
           statusline = { };
-          comment = { };
           surround = { };
           completion = { };
           indentscope = { symbol = "│"; };
