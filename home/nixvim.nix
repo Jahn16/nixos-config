@@ -75,6 +75,7 @@
       which-key.enable = true;
       neogen.enable = true;
       copilot-lua.enable = true;
+      codecompanion.enable = true;
       telescope = {
         enable = true;
         keymaps = {
