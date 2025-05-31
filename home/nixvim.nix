@@ -140,6 +140,7 @@
             python = [ "ruff_fix" "ruff_format" ];
             javascript = [ "prettier" ];
             typescript = [ "prettier" ];
+            html = [ "prettier" ];
             svelte = [ "prettier" ];
             go = [ "gofmt" "goimports" ];
             nix = [ "nixpkgs_fmt" ];
