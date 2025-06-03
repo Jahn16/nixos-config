@@ -70,6 +70,24 @@
     enable = true;
     package = pkgs.taskwarrior3;
   };
+
+  programs.firefox = {
+    enable = true;
+    profiles.default = {
+      extensions = {
+        packages = with inputs.firefox-addons.packages.${pkgs.system}; [
+          bitwarden
+          ublock-origin
+          sponsorblock
+          darkreader
+          remove-youtube-s-suggestions
+        ];
+      };
+      settings = {
+        "extensions.autoDisableScopes" = 0;
+      };
+    };
+  };
 }
 
 
