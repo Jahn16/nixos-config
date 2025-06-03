@@ -165,6 +165,7 @@
       "nvidia-x11"
       "nvidia-settings"
       "spotify"
+      "discord"
     ];
 
   hardware.graphics.enable = true;
