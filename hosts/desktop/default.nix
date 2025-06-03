@@ -59,14 +59,14 @@
   # Configure keymap in X11
 
 
-  programs.fish.enable = true;
+  programs.zsh.enable = true;
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jahn = {
     isNormalUser = true;
     description = "Jahn";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [ ];
-    shell = pkgs.fish;
+    packages = with pkgs; [ kitty ];
+    shell = pkgs.zsh;
   };
 
   security.rtkit.enable = true;
