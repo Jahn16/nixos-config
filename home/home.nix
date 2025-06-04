@@ -104,6 +104,37 @@
       settings = {
         "extensions.autoDisableScopes" = 0;
       };
+      search = {
+        force = true;
+        default = "SearXNG";
+        engines = {
+          "SearXNG" = {
+            urls = [{
+              template = "https://searxng.jahn16.com/search?q={searchTerms}";
+            }];
+            icon = "https://searxng.jahn16.com/favicon.ico";
+            definedAliases = [ "@sx" ];
+          };
+          "Nix Packages" = {
+            urls = [{
+              template = "https://search.nixos.org/packages?query={searchTerms}";
+            }];
+            icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            definedAliases = [ "@np" ];
+          };
+          "HomeManager Options" = {
+            urls = [{
+              template = "https://home-manager-options.extranix.com/?query={searchTerms}";
+            }];
+            icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            definedAliases = [ "@hm" ];
+          };
+          bing.metaData.hidden = true;
+          ddg.metaData.hidden = true;
+          wikipedia.metaData.hidden = true;
+        };
+        order = [ "SearXNG" "google" "Nix Packages" "HomeManager Options" ];
+      };
     };
   };
 }
