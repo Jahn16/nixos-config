@@ -71,4 +71,13 @@
     enable = true;
     package = pkgs.taskwarrior3;
   };
+  programs.kitty = {
+    enable = true;
+    shellIntegration.enableZshIntegration = true;
+    settings = {
+      background_opacity = 0.8;
+      hide_window_decorations = true;
+    };
+  };
+
 }
