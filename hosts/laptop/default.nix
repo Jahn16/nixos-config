@@ -121,6 +121,9 @@
     git
     vim
     wget
+    gnomeExtensions.paperwm
+    gnomeExtensions.tiling-shell
+    gnomeExtensions.forge
   ];
   environment.variables.EDITOR = "vim";
 
