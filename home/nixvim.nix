@@ -24,7 +24,12 @@
     globals = {
       mapleader = " ";
     };
-    colorschemes.tokyonight.enable = true;
+    colorschemes.cyberdream = {
+      enable = true;
+      settings = {
+        transparent = true;
+      };
+    };
     keymaps = [
       {
         mode = "n";
