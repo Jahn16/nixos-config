@@ -74,6 +74,24 @@
   programs.firefox = {
     enable = true;
     profiles.default = {
+      bookmarks = {
+        force = true;
+        settings = [
+          {
+            toolbar = true;
+            bookmarks = [
+              {
+                name = "GitHub";
+                url = "https://github.com/";
+              }
+              {
+                name = "PUC";
+                url = "https://pucminas.instructure.com";
+              }
+            ];
+          }
+        ];
+      };
       extensions = {
         packages = with inputs.firefox-addons.packages.${pkgs.system}; [
           bitwarden
