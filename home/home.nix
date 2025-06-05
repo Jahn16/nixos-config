@@ -4,6 +4,7 @@
     ./starship.nix
     ./nixvim.nix
     ./firefox.nix
+    ./hyprland.nix
     ./waybar.nix
   ];
 
@@ -24,6 +25,8 @@
     k9s
     teams-for-linux
     ripgrep
+    wl-clipboard
+    hyprshot
   ];
 
   home.file = { };
