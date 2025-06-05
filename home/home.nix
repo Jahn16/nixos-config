@@ -4,6 +4,7 @@
     ./starship.nix
     ./nixvim.nix
     ./firefox.nix
+    ./waybar.nix
   ];
 
   home.username = "jahn";
@@ -11,6 +12,7 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+    inter
     nerd-fonts.hack
     nixpkgs-fmt
     localsend
@@ -21,6 +23,7 @@
     kubectl
     k9s
     teams-for-linux
+    ripgrep
   ];
 
   home.file = { };
