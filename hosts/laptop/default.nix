@@ -100,7 +100,6 @@
     git
     vim
     wget
-    gnomeExtensions.forge
   ];
   environment.variables.EDITOR = "vim";
 
