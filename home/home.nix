@@ -27,6 +27,7 @@
     ripgrep
     wl-clipboard
     hyprshot
+    playerctl
   ];
 
   home.file = { };
