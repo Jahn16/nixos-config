@@ -6,7 +6,7 @@
       mainBar = {
         modules-left = [ "hyprland/workspaces" ];
         modules-center = [ "clock" ];
-        modules-right = [ "tray" "hyprland/language" "network" "wireplumber" "battery" "custom/power" ];
+        modules-right = [ "hyprland/language" "bluetooth" "network" "wireplumber" "battery" "custom/power" ];
         "clock" = {
           format = "{:%d %b %H:%M}";
         };
@@ -44,6 +44,11 @@
           format = "{} ";
           format-en = "en";
           format-br = "br";
+        };
+        "bluetooth" = {
+          format = "󰂯 ";
+          format-connected = " ";
+          on-click = "blueman-manager";
         };
       };
     };
@@ -170,6 +175,10 @@
                 background-color: #ffffff;
                 color: #000000;
             }
+        }
+
+        #battery {
+            font-size: 16px;
         }
 
         /* Using steps() instead of linear as a timing function to limit cpu usage */
