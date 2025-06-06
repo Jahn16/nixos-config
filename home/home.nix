@@ -91,6 +91,7 @@
     enable = true;
     settings = {
       monitor_name = "eDP-1";
+      default_external_mode = "mirror";
     };
   };
   programs.hyprlock = {
