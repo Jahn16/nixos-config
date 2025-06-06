@@ -39,6 +39,10 @@
           format-charging = " ";
           format-icons = [ " " " " " " " " " " ];
           tooltip-format = "{capacity}% {time}";
+          interval = 30;
+          states = {
+            critical = 20;
+          };
         };
         "hyprland/language" = {
           format = "{} ";
@@ -178,7 +182,7 @@
             }
         }
 
-        #battery {
+        #battery:not(.charging) {
             font-size: 16px;
         }
 
