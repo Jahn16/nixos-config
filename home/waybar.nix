@@ -39,12 +39,11 @@
           format-charging = "󰂄";
           format-icons = [ "󰁻" "󰁽" "󰁿" "󰂁" "󰁹" ];
         };
-
-      };
-      "hyprland/language" = {
-        format = "{} ";
-        format-en = "en";
-        format-br = "br";
+        "hyprland/language" = {
+          format = "{} ";
+          format-en = "en";
+          format-br = "br";
+        };
       };
     };
     style =
