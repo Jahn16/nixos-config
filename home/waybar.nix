@@ -38,7 +38,7 @@
           format = "{icon}";
           format-charging = " ";
           format-icons = [ " " " " " " " " " " ];
-          tooltip-format = "{capacity}% {timeTo}";
+          tooltip-format = "{capacity}% {time}";
         };
         "hyprland/language" = {
           format = "{} ";
