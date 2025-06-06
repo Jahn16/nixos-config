@@ -133,6 +133,7 @@
 
         #clock,
         #battery,
+        #bluetooth,
         #cpu,
         #memory,
         #disk,
