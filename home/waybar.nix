@@ -34,6 +34,12 @@
           format-wifi = "󰖩 ";
           format-disconnected = "󰖪 ";
         };
+        "battery" = {
+          format = "{icon}";
+          format-charging = "󰂄";
+          format-icons = [ "󰁻" "󰁽" "󰁿" "󰂁" "󰁹" ];
+        };
+
       };
       "hyprland/language" = {
         format = "{} ";
@@ -158,15 +164,6 @@
             margin-right: 0;
         }
 
-        #battery {
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-        #battery.charging, #battery.plugged {
-            color: #ffffff;
-            background-color: #26A65B;
-        }
 
         @keyframes blink {
             to {
