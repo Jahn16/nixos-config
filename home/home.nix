@@ -97,4 +97,5 @@
   programs.hyprlock = {
     enable = true;
   };
+  programs.bat.enable = true;
 }
