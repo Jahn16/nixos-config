@@ -29,7 +29,6 @@
     wl-clipboard
     hyprshot
     playerctl
-    hyprlock
   ];
 
   home.file = { };
@@ -94,5 +93,7 @@
       monitor_name = "eDP-1";
     };
   };
-
+  programs.hyprlock = {
+    enable = true;
+  };
 }
