@@ -6,6 +6,7 @@
     ./firefox.nix
     ./hyprland.nix
     ./waybar.nix
+    inputs.hyprdock.homeManagerModules.hyprdock
   ];
 
   home.username = "jahn";
@@ -28,6 +29,7 @@
     wl-clipboard
     hyprshot
     playerctl
+    hyprlock
   ];
 
   home.file = { };
@@ -84,6 +86,12 @@
     settings = {
       background_opacity = 0.8;
       hide_window_decorations = true;
+    };
+  };
+  programs.hyprdock = {
+    enable = true;
+    settings = {
+      monitor_name = "eDP-1";
     };
   };
 

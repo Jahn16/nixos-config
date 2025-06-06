@@ -134,4 +134,6 @@
   # Logitech Unifying Receiver
   hardware.logitech.wireless.enable = true;
   hardware.logitech.wireless.enableGraphical = true;
+
+  services.acpid.enable = true;
 }

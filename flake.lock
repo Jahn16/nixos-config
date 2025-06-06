@@ -25,6 +25,27 @@
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
+          "hyprdock",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1743550720,
+        "narHash": "sha256-hIshGgKZCgWh6AYJpJmRgFdR3WUbkY04o82X05xqQiY=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "c621e8422220273271f52058f618c94e405bb0f5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "flake-parts_2": {
+      "inputs": {
+        "nixpkgs-lib": [
           "nixvim",
           "nixpkgs"
         ]
@@ -81,6 +102,27 @@
         "type": "github"
       }
     },
+    "hyprdock": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1748977675,
+        "narHash": "sha256-jhob4vLJbgG1LzVghQTraGTh6yOpu7ELM1LpBV7/eoY=",
+        "owner": "Xetibo",
+        "repo": "hyprdock",
+        "rev": "4e87b5bee292920052d4ac79f69d386cf1dd9b45",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Xetibo",
+        "repo": "hyprdock",
+        "type": "github"
+      }
+    },
     "ixx": {
       "inputs": {
         "flake-utils": [
@@ -127,7 +169,7 @@
     },
     "nixvim": {
       "inputs": {
-        "flake-parts": "flake-parts",
+        "flake-parts": "flake-parts_2",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -175,6 +217,7 @@
       "inputs": {
         "firefox-addons": "firefox-addons",
         "home-manager": "home-manager",
+        "hyprdock": "hyprdock",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim"
       }

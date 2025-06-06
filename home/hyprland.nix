@@ -9,9 +9,9 @@
       "$terminal" = "kitty";
       "$browser" = "firefox";
       monitor = [
-        ", highrr, auto, 1"
+        ", highres, auto, 1"
       ];
-      exec-once = [ "waybar" ];
+      exec-once = [ "waybar" "hyprdock --server" ];
       decoration = {
         rounding = 5;
       };
