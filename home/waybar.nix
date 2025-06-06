@@ -11,7 +11,7 @@
           format = "{:%d %b %H:%M}";
         };
         "custom/power" = {
-          format = "⏻";
+          format = " ";
           on-click = "wlogout";
         };
         "tray" = {
@@ -26,18 +26,18 @@
         };
         "wireplumber" = {
           format = " ";
-          format-muted = "󰝟 ";
+          format-muted = " ";
           tooltip-format = "{volume}";
         };
         "network" = {
           format-ethernet = "󰈀 ";
-          format-wifi = "󰖩 ";
-          format-disconnected = "󰖪 ";
+          format-wifi = " ";
+          format-disconnected = "󱛅 ";
         };
         "battery" = {
           format = "{icon}";
-          format-charging = "󰂄";
-          format-icons = [ "󰁻" "󰁽" "󰁿" "󰂁" "󰁹" ];
+          format-charging = " ";
+          format-icons = [ " " " " " " " " " " ];
         };
         "hyprland/language" = {
           format = "{} ";
