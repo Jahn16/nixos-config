@@ -30,6 +30,7 @@
     wl-clipboard
     hyprshot
     playerctl
+    nwg-look
   ];
 
   home.file = { };
@@ -101,6 +102,10 @@
   programs.bat.enable = true;
   gtk = {
     enable = true;
+    theme = {
+      name = "Graphite-Dark";
+      package = pkgs.graphite-gtk-theme;
+    };
     iconTheme = {
       name = "candy-icons";
       package = pkgs.candy-icons;
