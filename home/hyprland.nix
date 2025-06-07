@@ -11,7 +11,7 @@
       monitor = [
         ", highres, auto, 1"
       ];
-      exec-once = [ "waybar" "hyprdock --server" ];
+      exec-once = [ "waybar" "syshud" "hyprdock --server" ];
       decoration = {
         rounding = 5;
       };

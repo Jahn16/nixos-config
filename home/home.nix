@@ -31,6 +31,7 @@
     hyprshot
     playerctl
     nwg-look
+    syshud
   ];
 
   home.file = { };
