@@ -109,8 +109,8 @@
       package = pkgs.graphite-gtk-theme;
     };
     iconTheme = {
-      name = "candy-icons";
-      package = pkgs.candy-icons;
+      name = "BeautyLine";
+      package = pkgs.beauty-line-icon-theme;
     };
     gtk3.extraConfig = {
       Settings = ''
