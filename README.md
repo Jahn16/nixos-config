@@ -2,11 +2,11 @@
 ## Changing the configuration
 ### System
 ```
-sudo -i nixos-rebuild switch --flake ~/nixos-config#nixos
+sudo -i nixos-rebuild switch --flake ~/nixos-config#<host>
 ```
 ### Home Manager
 ```
-home-manager switch --flake ~/nixos-config#jahn@nixos
+home-manager switch --flake ~/nixos-config#jahn
 ```
 ## Updating
 1. Update flake.lock
