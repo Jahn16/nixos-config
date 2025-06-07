@@ -18,7 +18,7 @@
       themeConfig = {
         FormPosition = "left";
         Background = "Backgrounds/hyprland_kath.mp4";
-        BackgroundPlaceHolder = "Backgrounds/hyprland_kath.png";
+        BackgroundPlaceholder = "Backgrounds/hyprland_kath.png";
         BackgroundSpeed = "1.0";
         HeaderTextColor = "#b4d8ff";
         DateTextColor = "#b4d8ff";
