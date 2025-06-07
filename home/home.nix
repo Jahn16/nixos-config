@@ -32,6 +32,7 @@
     playerctl
     nwg-look
     syshud
+    pavucontrol
   ];
 
   home.file = { };

@@ -25,9 +25,11 @@
           };
         };
         "wireplumber" = {
-          format = " ";
+          format = "{icon}";
           format-muted = " ";
           tooltip-format = "{volume}";
+          on-click = "pavucontrol";
+          format-icons = [ "" " " " " ];
         };
         "network" = {
           format-ethernet = "󰈀 ";
