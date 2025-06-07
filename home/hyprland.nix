@@ -30,7 +30,7 @@
           "$mod, C, killactive,"
           "$mod, M, exit,"
           "$mod, F, fullscreen, 1"
-          "$mod, A, exec, rofi -show drun"
+          "$mod, A, exec, walker --modules applications"
           # Screenshot
           ", PRINT, exec, hyprshot -m output"
           "$mod, PRINT, exec, hyprshot -m output"

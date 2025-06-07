@@ -6,6 +6,7 @@
     ./firefox.nix
     ./hyprland.nix
     ./waybar.nix
+    ./launcher.nix
     inputs.hyprdock.homeManagerModules.hyprdock
   ];
 
