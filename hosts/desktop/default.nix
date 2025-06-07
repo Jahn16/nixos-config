@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ../../system/gc.nix
       ../../system/podman.nix
+      ../../system/display-manager.nix
     ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -99,9 +100,6 @@
     bluez
     bluez-tools
     podman-compose
-    (pkgs.catppuccin-sddm.override {
-      flavor = "mocha";
-    })
   ];
   services.blueman.enable = true;
   environment.sessionVariables = {
@@ -145,19 +143,6 @@
     ];
   };
 
-  services = {
-    displayManager = {
-      sddm = {
-        enable = true;
-        wayland.enable = true;
-        theme = "catppuccin-mocha";
-        package = pkgs.kdePackages.sddm;
-      };
-      defaultSession = "hyprland";
-    };
-
-    xserver.xkb.layout = "us";
-  };
 
 
   services.xserver.videoDrivers = [ "nvidia" ];
