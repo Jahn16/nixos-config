@@ -11,6 +11,7 @@
       ./hardware-configuration.nix
       ../../system/podman.nix
       ../../system/gc.nix
+      ../../system/display-manager.nix
     ];
 
   # Bootloader.
@@ -49,7 +50,7 @@
 
   # Configure keymap in X11
   services.xserver.xkb = {
-    layout = "br";
+    layout = "us";
     variant = "";
   };
 
