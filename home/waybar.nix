@@ -12,7 +12,7 @@
         };
         "custom/power" = {
           format = " ";
-          on-click = "wlogout";
+          on-click = "nwg-bar";
         };
         "tray" = {
           spacing = 10;

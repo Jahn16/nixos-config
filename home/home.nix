@@ -33,6 +33,7 @@
     nwg-look
     syshud
     pavucontrol
+    nwg-bar
   ];
 
   home.file = { };
