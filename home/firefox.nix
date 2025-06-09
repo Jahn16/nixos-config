@@ -52,6 +52,13 @@
             icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
             definedAliases = [ "@np" ];
           };
+          "Nix Options" = {
+            urls = [{
+              template = "https://search.nixos.org/options?query={searchTerms}";
+            }];
+            icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            definedAliases = [ "@no" ];
+          };
           "HomeManager Options" = {
             urls = [{
               template = "https://home-manager-options.extranix.com/?query={searchTerms}";
