@@ -150,6 +150,7 @@
             go = [ "gofmt" "goimports" ];
             nix = [ "nixpkgs_fmt" ];
             yaml = [ "yamlfix" ];
+            rust = [ "rustfmt" ];
           };
         };
       };
@@ -172,6 +173,11 @@
           ts_ls.enable = true;
           html.enable = true;
           svelte.enable = true;
+          rust_analyzer = {
+            enable = true;
+            installCargo = false;
+            installRustc = false;
+          };
         };
         keymaps = {
           diagnostic = {
