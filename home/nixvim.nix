@@ -79,7 +79,13 @@
       nvim-tree.enable = true;
       which-key.enable = true;
       neogen.enable = true;
-      copilot-lua.enable = true;
+      copilot-lua = {
+        enable = true;
+        settings = {
+          suggestion.enabled = false;
+          panel.enabled = false;
+        };
+      };
       codecompanion.enable = true;
       telescope = {
         enable = true;
@@ -105,7 +111,6 @@
         modules = {
           statusline = { };
           surround = { };
-          completion = { };
           indentscope = { symbol = "│"; };
           starter = { };
           pairs = { };
@@ -132,6 +137,30 @@
           auto_install = false;
           ensure_installed = [ "python" "go" "typescript" "svelte" "nix" ];
           parser_install_dir = "/home/jahn/.local/share/nvim/treesitter";
+        };
+      };
+      friendly-snippets.enable = true;
+      blink-copilot.enable = true;
+      blink-cmp = {
+        enable = true;
+        settings = {
+          sources = {
+            default = [
+              "lsp"
+              "path"
+              "snippets"
+              "buffer"
+              "copilot"
+            ];
+            providers = {
+              copilot = {
+                async = true;
+                module = "blink-copilot";
+                name = "copilot";
+                score_offset = 100;
+              };
+            };
+          };
         };
       };
       conform-nvim = {
