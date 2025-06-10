@@ -58,6 +58,7 @@
           desc = "Generate docstring";
         };
       }
+      { mode = "n"; key = "<leader>cc"; action = "<cmd>CodeCompanionChat<CR>"; options = { silent = true; desc = "Open chat"; }; }
       { mode = "n"; key = "<leader>ha"; action.__raw = "function() require'harpoon':list():add() end"; }
       { mode = "n"; key = "<leader>he"; action.__raw = "function() require'harpoon'.ui:toggle_quick_menu(require'harpoon':list()) end"; }
       { mode = "n"; key = "<leader>hj"; action.__raw = "function() require'harpoon':list():select(1) end"; }
