@@ -33,15 +33,6 @@
     keymaps = [
       {
         mode = "n";
-        key = "<leader>e";
-        action = "<cmd>NvimTreeToggle<CR>";
-        options = {
-          silent = true;
-          desc = "Toggle File Explorer";
-        };
-      }
-      {
-        mode = "n";
         key = "<leader>r";
         action = "<cmd>SessionRestore<CR>";
         options = {
