@@ -76,7 +76,6 @@
     plugins = {
       web-devicons.enable = true;
       tmux-navigator.enable = true;
-      nvim-tree.enable = true;
       which-key.enable = true;
       neogen.enable = true;
       copilot-lua = {
