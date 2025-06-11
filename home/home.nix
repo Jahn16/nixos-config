@@ -49,7 +49,7 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
   };
-  programs.fzf = {
+  programs.atuin = {
     enable = true;
     enableZshIntegration = true;
   };
