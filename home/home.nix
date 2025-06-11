@@ -97,6 +97,10 @@
     settings = {
       monitor_name = "eDP-1";
       default_external_mode = "mirror";
+      enable_internal_monitor_command = {
+        base = "hyprctl";
+        args = [ "keyword" "monitor" "eDP-1, highres, auto, 1, mirror, HDMI-A-1" ];
+      };
     };
   };
   programs.hyprlock = {
