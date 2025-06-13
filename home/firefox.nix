@@ -10,6 +10,10 @@
             toolbar = true;
             bookmarks = [
               {
+                name = "Dash";
+                url = "https://dash.jahn16.com/";
+              }
+              {
                 name = "GitHub";
                 url = "https://github.com/";
               }
