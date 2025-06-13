@@ -49,6 +49,15 @@
           desc = "Generate docstring";
         };
       }
+      {
+        mode = "n";
+        key = "<leader>e";
+        action = ":lua MiniFiles.open()<CR>";
+        options = {
+          silent = true;
+          desc = "Open file explorer";
+        };
+      }
       { mode = "n"; key = "<leader>cc"; action = "<cmd>CodeCompanionChat Toggle<CR>"; options = { silent = true; desc = "Open chat"; }; }
       { mode = "n"; key = "<leader>ha"; action.__raw = "function() require'harpoon':list():add() end"; }
       { mode = "n"; key = "<leader>he"; action.__raw = "function() require'harpoon'.ui:toggle_quick_menu(require'harpoon':list()) end"; }
@@ -107,6 +116,7 @@
           pairs = { };
           diff = { };
           git = { };
+          files = { };
         };
       };
       auto-session =
