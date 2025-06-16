@@ -11,7 +11,7 @@
       "bluez5.roles" = [ "hsp_hs" "hsp_ag" "hfp_hf" "hfp_ag" ];
     };
   };
-  environment.systemPackage = with pkgs; [
+  environment.systemPackages = with pkgs; [
     bluez
     bluez-tools
   ];
