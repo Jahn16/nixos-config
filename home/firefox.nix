@@ -40,6 +40,7 @@
         ];
       };
       settings = {
+        "browser.newtabpage.activity-stream.feeds.topsites" = false;
         "extensions.autoDisableScopes" = 0;
         "signon.rememberSignons" = false;
       };
@@ -82,8 +83,5 @@
         order = [ "SearXNG" "google" "Nix Packages" "HomeManager Options" ];
       };
     };
-
-
   };
-
 }
