@@ -32,6 +32,7 @@
           sponsorblock
           darkreader
           remove-youtube-s-suggestions
+          linkhints
         ];
       };
       settings = {
