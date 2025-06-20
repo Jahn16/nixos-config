@@ -21,6 +21,10 @@
                 name = "PUC";
                 url = "https://pucminas.instructure.com";
               }
+              {
+                name = "Gmail";
+                url = "https://mail.google.com";
+              }
             ];
           }
         ];
