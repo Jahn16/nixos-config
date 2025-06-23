@@ -41,6 +41,7 @@
       };
       settings = {
         "browser.newtabpage.activity-stream.feeds.topsites" = false;
+        "browser.sessionstore.max_resumed_crashes" = 0;
         "extensions.autoDisableScopes" = 0;
         "signon.rememberSignons" = false;
       };
