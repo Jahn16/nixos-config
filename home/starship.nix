@@ -16,6 +16,12 @@
         disabled = false;
         detect_folders = [ "charts/" "templates/" ];
       };
+      custom.task = {
+        symbol = " ";
+        style = "blue";
+        command = "task count +PENDING";
+        when = "[ $(task count +PENDING) -gt 0 ]";
+      };
     };
   };
 }
