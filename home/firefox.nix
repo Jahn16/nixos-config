@@ -37,6 +37,7 @@
           darkreader
           remove-youtube-s-suggestions
           linkhints
+          leechblock-ng
         ];
       };
       settings = {
