@@ -9,7 +9,8 @@
       "$terminal" = "kitty";
       "$browser" = "firefox";
       monitor = [
-        ", highres, auto, 1"
+        "eDP-1, highres, auto, 1, mirror, HDMI-A-1"
+        "HDMI-A-1, highres, auto, 1"
       ];
       exec-once = [ "waybar" "syshud" "hyprdock --server" ];
       decoration = {
@@ -17,7 +18,6 @@
       };
       windowrulev2 = [
         "opacity 0.80 0.80,class:^(kitty)$"
-        "opacity 0.90 0.90,class:^(firefox)$"
       ];
       input = {
         kb_layout = "us,br";
