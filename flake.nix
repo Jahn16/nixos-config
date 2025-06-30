@@ -18,7 +18,7 @@
     walker.url = "github:abenz1267/walker";
     walker.inputs.nixpkgs.follows = "nixpkgs";
 
-    hyprdock.url = "github:Xetibo/hyprdock";
+    hyprdock.url = "github:Jahn16/hyprdock";
     hyprdock.inputs.nixpkgs.follows = "nixpkgs";
   };
 

@@ -110,15 +110,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1749389751,
-        "narHash": "sha256-ZGCzz+2++YxGFaFBV2G2j6MglW/B6+rBrvVy9H/OUJw=",
-        "owner": "Xetibo",
+        "lastModified": 1749558512,
+        "narHash": "sha256-r9yAbsHzZtFxi3hIY+8Tt868sccjJis0Z0fKDOawAMs=",
+        "owner": "Jahn16",
         "repo": "hyprdock",
-        "rev": "23d7a639505ca5becee8da3bb497e61958ddb142",
+        "rev": "f0232f618b87520e45e3da85c669d519ed8cdfcd",
         "type": "github"
       },
       "original": {
-        "owner": "Xetibo",
+        "owner": "Jahn16",
         "repo": "hyprdock",
         "type": "github"
       }
