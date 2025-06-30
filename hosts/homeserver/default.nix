@@ -59,7 +59,7 @@
     isNormalUser = true;
     description = "Jahn";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [ git neovim ];
+    packages = with pkgs; [ git neovim fluxcd ];
   };
 
   # Enable automatic login for the user.
