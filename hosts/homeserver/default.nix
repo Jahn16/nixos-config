@@ -102,7 +102,7 @@
   services.k3s = {
     enable = true;
     extraFlags = [
-      "--disable-traefik"
+      "--disable traefik"
     ];
   };
 }
