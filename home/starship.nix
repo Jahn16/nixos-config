@@ -19,9 +19,8 @@
       custom.task = {
         symbol = " ";
         style = "blue";
-        require_repo = true;
-        command = "task count +PENDING";
-        when = "[ $(task count +PENDING) -gt 0 ]";
+        command = "task count +PENDING project:\${PWD##*/}";
+        when = "[ $(task count +PENDING project:\${PWD##*/}) -gt 0 ]";
       };
     };
   };
