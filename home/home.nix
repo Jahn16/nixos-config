@@ -23,7 +23,6 @@
     tree
     discord
     jellyfin-media-player
-    kubectl
     k9s
     teams-for-linux
     ripgrep
