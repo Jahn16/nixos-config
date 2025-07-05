@@ -22,8 +22,21 @@
                 url = "https://pucminas.instructure.com";
               }
               {
-                name = "Gmail";
-                url = "https://mail.google.com";
+                name = "Google";
+                bookmarks = [
+                  {
+                    name = "Gmail";
+                    url = "https://mail.google.com/";
+                  }
+                  {
+                    name = "Sheets";
+                    url = "https://sheets.google.com/";
+                  }
+                  {
+                    name = "Drive";
+                    url = "https://drive.google.com/";
+                  }
+                ];
               }
             ];
           }
