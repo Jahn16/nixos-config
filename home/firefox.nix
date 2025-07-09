@@ -19,7 +19,16 @@
               }
               {
                 name = "PUC";
-                url = "https://pucminas.instructure.com";
+                bookmarks = [
+                  {
+                    name = "Canvas";
+                    url = "https://pucminas.instructure.com";
+                  }
+                  {
+                    name = "SGA";
+                    url = "https://www.sistemas.pucminas.br/sgaaluno4/";
+                  }
+                ];
               }
               {
                 name = "Google";
