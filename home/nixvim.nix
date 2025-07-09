@@ -181,6 +181,7 @@
             nix = [ "nixpkgs_fmt" ];
             yaml = [ "yamlfix" ];
             rust = [ "rustfmt" ];
+            json = [ "prettier" ];
           };
         };
       };
