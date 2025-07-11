@@ -103,6 +103,7 @@
     enable = true;
     extraFlags = [
       "--disable traefik"
+      "--disable servicelb"
     ];
   };
 }
